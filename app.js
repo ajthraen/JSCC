@@ -14,14 +14,27 @@
 // let name2 = "Andy"
 // let bool = 'Andy' === name2
 // console.log(bool)
-let subscribed = false
-let loggedin = true
-if (subscribed === true) {
-    console.log('Show the Video')
+// let subscribed = false
+// let loggedin = true
+// if (subscribed === true) {
+//     console.log('Show the Video')
+// }
+// else if (loggedin === true){
+//     console.log('Enroll Today')
+// }
+// else{
+//     console.log('Sign In')
+// }
+let cash = 30
+let price = 40
+let balance = price - cash
+
+if (cash > price) {
+    console.log(`We are giving you $${(balance*-1)} dollars in change`)
 }
-else if (loggedin === true){
-    console.log('Enroll Today')
+else if (cash === price) {
+    console.log(`You paid, have a nice day!`)
 }
-else{
-    console.log('Sign In')
+else {
+    console.log(`You still owe $${balance} dollars`)
 }
