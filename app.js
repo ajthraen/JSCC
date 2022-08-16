@@ -119,13 +119,13 @@
 // console.log(convertTemp(10));
 
 //ARRAYS
-let arr = [10, 20, 30, 40, 10]
+//let arr = [10, 20, 30, 40, 10]
 // let numargs = arr.length - 1
 // console.log(arr[0])
 // console.log(arr[numargs])
 //arr.push(200) //.push adds the element to the end of the array
 
-//callback function, the filter element loops over every 
+//callback function: the filter element loops over every 
 //element in the array until it sees a return true
 //then pushes the current value to the newArr
 // let newArr = arr.filter((element) => { 
@@ -134,5 +134,40 @@ let arr = [10, 20, 30, 40, 10]
 //     // }
 //     return element <= 20
 // }) 
-let newArr = arr.filter((element) => element <= 20) 
-console.log(newArr)
+// let newArr = arr.filter((element) => element <= 20) 
+// console.log(newArr)
+
+//this only returns the values != to FAIL
+// let gradeArry = ['A+', 'A', 'FAIL']
+// let newArr = gradeArry.filter((element) => element != 'FAIL')
+// console.log(newArr)
+
+// let gradeArry = ['FAIL']
+// let newArr = gradeArry.filter((element) => element != 'FAIL')
+// console.log(newArr)
+
+// let grades = ['A+', 'A', 'FAIL']
+
+// //create new empty array
+// let goodGrades = []
+// for (let i = 0; i < grades.length; i++) {
+//     if (grades[i] != 'FAIL') {
+//         goodGrades.push(grades[i])
+//     } 
+// }
+// console.log(goodGrades)
+
+//map function as used below allows you to turn values
+//in an array into a new value
+// let arr = [1, 5, 10, 3]
+
+// let newArray = arr.map((element) => {
+//     console.log(element)
+//     return element * 100;
+// })
+// console.log(newArray)
+
+//same result as above
+// let arr = [1, 5, 10, 3]
+// let newArray = arr.map((element) => element * 100)
+// console.log(newArray)
