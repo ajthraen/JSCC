@@ -77,3 +77,62 @@
 // for (let i = 0; i < charCount; i++) {
 //     console.log(str[i])
 // }
+
+//FUNCTIONS
+//function definition
+//name2 = 'Andy'
+// function welcometoFES(name2) {
+//     console.log(`Welcome ${name2}`)
+// }
+
+// //call function
+// welcometoFES('Andrew');
+// welcometoFES('Andy');
+
+// function welcometoFES(firstName, lastName) {
+//     console.log(`Welcome ${firstName} ${lastName}`)
+// }
+
+// //call function
+// welcometoFES('Andrew', 'Thraen');
+// welcometoFES('Andy', 'Train');
+
+//a return statement in a function ends the function
+//at the line its placed on
+
+// function sumofnums(num1, num2) {
+//     return num1 + num2
+// }
+
+// console.log(sumofnums(10, 20));
+
+// function convertTemp(celsius) {
+//     return (celsius * 1.8) + 32
+// }
+
+// console.log(convertTemp(10));
+
+// const convertTemp = (celsius) => {
+//     return (celsius * 1.8) + 32 
+// }
+
+// console.log(convertTemp(10));
+
+//ARRAYS
+let arr = [10, 20, 30, 40, 10]
+// let numargs = arr.length - 1
+// console.log(arr[0])
+// console.log(arr[numargs])
+//arr.push(200) //.push adds the element to the end of the array
+
+//callback function, the filter element loops over every 
+//element in the array until it sees a return true
+//then pushes the current value to the newArr
+// let newArr = arr.filter((element) => { 
+//     // if (element <= 20){
+//     //     return true
+//     // }
+//     return element <= 20
+// }) 
+let newArr = arr.filter((element) => element <= 20) 
+console.log(newArr)
