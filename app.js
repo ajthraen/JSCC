@@ -171,3 +171,54 @@
 // let arr = [1, 5, 10, 3]
 // let newArray = arr.map((element) => element * 100)
 // console.log(newArray)
+
+//OBJECTS
+//Login Function Using Objects
+let userFName = "Andrew"
+let userLName = "Train"
+let loggedIn = false
+
+let user = [
+{
+    userName: 'Andrew',
+    userEmail: 'ajtrain@gmail.com',
+    password: 'test123',
+    subStatus: 'VIP',
+    lessonsComp: [0, 1],
+},
+{
+    userName: 'Andy',
+    userEmail: 'train@gmail.com',
+    password: 'test1',
+    subStatus: 'Pro',
+    lessonsComp: [1, 1],
+},
+{
+    userName: 'AJ',
+    userEmail: 'AJ@gmail.com',
+    password: 'test',
+    subStatus: 'None',
+    lessonsComp: [0, 0],
+},
+];
+//console.log(user.userEmail);
+//console.log(user[0].subStatus);
+//console.log(user.lessonsComp[1]);
+
+function login(userEmail, password) {
+    for (let i = 0; i < user.length; i++) {
+        //console.log(user[i].userEmail, user[i].password);
+        if (user[i].userEmail == userEmail){
+            console.log(user[i].userEmail);
+            if (user[i].password == password){
+                console.log('You are logged in')
+                return true
+            }
+            else {console.log('Password Incorrect')}
+        }
+        else if (i == (user.length - 1)){
+            console.log('User Not Found')
+        }
+    }
+}
+login ('AJT@gmail.com', 'test1');
