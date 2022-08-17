@@ -175,84 +175,89 @@
 //OBJECTS
 //Login Function Using Objects
 
-let users = [
-{
-    userName: 'Andrew',
-    userEmail: 'ajtrain@gmail.com',
-    password: 'test123',
-    subStatus: 'VIP',
-    lessonsComp: [0, 1],
-},
-{
-    userName: 'Andy',
-    userEmail: 'train@gmail.com',
-    password: 'test1',
-    subStatus: 'Pro',
-    lessonsComp: [1, 1],
-},
-{
-    userName: 'AJ',
-    userEmail: 'AJ@gmail.com',
-    password: 'test',
-    subStatus: 'None',
-    lessonsComp: [0, 0],
-},
-];
-//console.log(users.userEmail);
-//console.log(users[0].subStatus);
-//console.log(users.lessonsComp[1]);
+// let users = [
+// {
+//     userName: 'Andrew',
+//     userEmail: 'ajtrain@gmail.com',
+//     password: 'test123',
+//     subStatus: 'VIP',
+//     lessonsComp: [0, 1],
+// },
+// {
+//     userName: 'Andy',
+//     userEmail: 'train@gmail.com',
+//     password: 'test1',
+//     subStatus: 'Pro',
+//     lessonsComp: [1, 1],
+// },
+// {
+//     userName: 'AJ',
+//     userEmail: 'AJ@gmail.com',
+//     password: 'test',
+//     subStatus: 'None',
+//     lessonsComp: [0, 0],
+// },
+// ];
+// //console.log(users.userEmail);
+// //console.log(users[0].subStatus);
+// //console.log(users.lessonsComp[1]);
 
-function login(userEmail, password) {
-    for (let i = 0; i < users.length; i++) {
-        // console.log(users[i].userEmail, users[i].password);
-        if (users[i].userEmail == userEmail){
-            console.log(users[i].userEmail);
-            if (users[i].password == password){
-                console.log('You are logged in')
-                return;
-            }
-            else {
-                console.log('Password Incorrect') 
-                return;
-            }
-        }
-        else if (i == (users.length - 1)) {
-            console.log('User Not Found')
-        }
-        //return;
-    }
-}
-login ('train@gmail.com', 'test1');
-
-//New User push
-
-// function newUser(
-//     userName,
-//     userEmail,
-//     password,
-//     subStatus,
-//     lessonsComp,
-// ){   
-//     let user = {
-//             userName: userName,
-//             userEmail: userEmail,
-//             password: password,
-//             subStatus: subStatus,
-//             lessonsComp: lessonsComp,
+// function login(userEmail, password) {
+//     for (let i = 0; i < users.length; i++) {
+//         // console.log(users[i].userEmail, users[i].password);
+//         if (users[i].userEmail == userEmail){
+//             //console.log(users[i].userEmail);
+//             if (users[i].password == password){
+//                 console.log('You are logged in')
+//                 return;
+//             }
+//             else {
+//                 console.log('Password Incorrect') 
+//                 return;
+//             }
 //         }
-//     //users.push(user)
+//         else if (i == (users.length - 1)) {
+//             console.log('User Not Found')
+//         }
+//         //return;
+//     }
+// }
+// login ('AJ@gmail.com', 'test');
+
+// //New User push
+
+// function newUser(user){   
+//     users.push(user)
 //     //console.log(user)
     
 // }
-    
-    
+
 // newUser({
-//     userName:'B', 
-//     userEmail:'c@aol.com', 
-//     password:'test2', 
-//     subStatus:'PRO', 
-//     discordId:'champ', 
-//     lessonsComp: 0,
+//     userName:'B1', 
+//     userEmail:'c1@aol.com', 
+//     password:'test12', 
+//     subStatus:'VIP', 
+//     lessonsComp: 2,
 // });
 // console.log(users);
-// //console.log(users[1]);
+
+//DOM DOM DOM
+//First Way: Use is element does not have an id 
+//(use . instead of # if no id)
+//console.log(document.querySelector('.title'));
+
+//Second Way: Use if element does have an id
+//console.log(document.getElementById('title'))
+
+//Changes the displayed html value to something else (inner html)
+//console.log(document.querySelector('.title').innerHTML = "New Title");
+
+
+// //Change CSS
+// document.querySelector('.title').style.color = 'blue'
+
+// //
+// function changeTitleColor() {
+//     console.log('clicked')
+//     document.querySelector('.title').style.color = 'red'
+// }
