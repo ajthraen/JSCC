@@ -174,11 +174,8 @@
 
 //OBJECTS
 //Login Function Using Objects
-let userFName = "Andrew"
-let userLName = "Train"
-let loggedIn = false
 
-let user = [
+let users = [
 {
     userName: 'Andrew',
     userEmail: 'ajtrain@gmail.com',
@@ -201,24 +198,61 @@ let user = [
     lessonsComp: [0, 0],
 },
 ];
-//console.log(user.userEmail);
-//console.log(user[0].subStatus);
-//console.log(user.lessonsComp[1]);
+//console.log(users.userEmail);
+//console.log(users[0].subStatus);
+//console.log(users.lessonsComp[1]);
 
 function login(userEmail, password) {
-    for (let i = 0; i < user.length; i++) {
-        //console.log(user[i].userEmail, user[i].password);
-        if (user[i].userEmail == userEmail){
-            console.log(user[i].userEmail);
-            if (user[i].password == password){
+    for (let i = 0; i < users.length; i++) {
+        // console.log(users[i].userEmail, users[i].password);
+        if (users[i].userEmail == userEmail){
+            console.log(users[i].userEmail);
+            if (users[i].password == password){
                 console.log('You are logged in')
-                return true
+                return;
             }
-            else {console.log('Password Incorrect')}
+            else {
+                console.log('Password Incorrect') 
+                return;
+            }
         }
-        else if (i == (user.length - 1)){
+        else if (i == (users.length - 1)) {
             console.log('User Not Found')
         }
+        //return;
     }
 }
-login ('AJT@gmail.com', 'test1');
+login ('train@gmail.com', 'test1');
+
+//New User push
+
+// function newUser(
+//     userName,
+//     userEmail,
+//     password,
+//     subStatus,
+//     lessonsComp,
+// ){   
+//     let user = {
+//             userName: userName,
+//             userEmail: userEmail,
+//             password: password,
+//             subStatus: subStatus,
+//             lessonsComp: lessonsComp,
+//         }
+//     //users.push(user)
+//     //console.log(user)
+    
+// }
+    
+    
+// newUser({
+//     userName:'B', 
+//     userEmail:'c@aol.com', 
+//     password:'test2', 
+//     subStatus:'PRO', 
+//     discordId:'champ', 
+//     lessonsComp: 0,
+// });
+// console.log(users);
+// //console.log(users[1]);
