@@ -241,8 +241,8 @@
 // });
 // console.log(users);
 
-//DOM DOM DOM
-//First Way: Use is element does not have an id 
+//DOM 'DOM DOM'
+//First Way: Use if element does not have an id 
 //(use . instead of # if no id)
 //console.log(document.querySelector('.title'));
 
@@ -261,3 +261,4 @@
 //     console.log('clicked')
 //     document.querySelector('.title').style.color = 'red'
 // }
+
