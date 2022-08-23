@@ -262,3 +262,82 @@
 //     document.querySelector('.title').style.color = 'red'
 // }
 
+//BEGINNER CHALLENGE
+//#1
+// function addition1(num1, num2) {
+//     sum1 = num1 + num2 
+// }
+
+// addition1(3, 2); {
+//     console.log(sum1)
+// }
+
+//#2
+// function hoursintoSeconds(hours1) {
+//     return hours1 * 3600;
+// }
+// console.log(hoursintoSeconds(10))
+
+//#3
+// function perimeter(width1, height1) {
+//     return (2*width1) + (2*height1)
+// }
+// console.log(perimeter(6,7))
+
+//#5
+// function twoWords(word1) {
+//     return word1 + 'Frontend'
+// }
+// console.log(twoWords('Orange'))
+
+//#6
+//Long Way
+// function greaterThan(num1, num2) {
+//     if ((num1 + num2) > 100) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+//console.log(greaterThan(50,60))
+//Short Way
+// function greaterThan(num1, num2) {
+//     return (num1 + num2) > 100
+// }
+// console.log(greaterThan(50,40))
+
+//#7
+// function lessThanEq0(num1) {return num1 <= 0}
+// console.log(lessThanEq0(-20))
+
+//#8
+// function oppBool(input1) {return input1 != true}
+// console.log(oppBool(false))
+
+//#13
+// function loggedAndSubbed (logged_in, subbed) {
+//     if (logged_in == 'Logged In' && subbed == 'Subscribed') {
+//         return true
+//     }
+//     return false
+// }
+// console.log(loggedAndSubbed('Logged Out', 'Subscribed'))
+
+// function loggedAndSubbed (logged_in, subbed) {
+//     if (logged_in == 'Logged In' || subbed == 'Subscribed') {
+//         return true
+//     }
+//     return false
+// }
+// console.log(loggedAndSubbed('Logged Out', 'Not Subscribed'))
+
+//MEDIUM CHALLENGES
+function filterFalsy (obj1, obj2) {
+    if (!obj1) {return console.log(obj1)}
+    return console.log(obj2)
+}
+filterFalsy(0,'Dog')
+
+
+
