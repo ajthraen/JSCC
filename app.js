@@ -333,11 +333,22 @@
 // console.log(loggedAndSubbed('Logged Out', 'Not Subscribed'))
 
 //MEDIUM CHALLENGES
-function filterFalsy (obj1, obj2) {
-    if (!obj1) {return console.log(obj1)}
-    return console.log(obj2)
-}
-filterFalsy(0,'Dog')
+//#1
+// function filterFalsy (obj1, obj2) {
+//     if (!obj1) {return obj1}
+//     return obj2
+// }
+// console.log(filterFalsy(false,'Dog'))
 
+//#2
+// function arrLength(array1) {
+//     console.log(array1.length)
+// }
+// arrLength([1,2,3,6,7])
 
+//#3
+// function arrLength(array1) {
+//     console.log(array1[(array1.length - 1)])
+// }
+// arrLength([1,2,3,6,7,9])
 
