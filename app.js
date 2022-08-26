@@ -352,4 +352,24 @@
 // }
 // arrLength([1,2,3,6,7,9])
 
+//#4
+// let sum1 = 0
+// function arrSum(array1){
+//     for (let i = 0; i < array1.length; i++){
+//         sum1 = sum1 + array1[i]
+//     }
+//     return sum1
+// }
+// console.log(arrSum([0,-5,-10]))
+
+//5
+let sum1 = 0;
+function progSum(num1){
+    for (let i = 1; i <= num1; i++){
+        sum1 = sum1 + i;
+    }
+    return sum1
+}
+console.log(progSum(600))
+
 
