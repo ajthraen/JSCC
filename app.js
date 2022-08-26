@@ -363,13 +363,35 @@
 // console.log(arrSum([0,-5,-10]))
 
 //5
-let sum1 = 0;
-function progSum(num1){
-    for (let i = 1; i <= num1; i++){
-        sum1 = sum1 + i;
+// let sum1 = 0;
+// function progSum(num1){
+//     for (let i = 1; i <= num1; i++){
+//         sum1 = sum1 + i;
+//     }
+//     return sum1
+// }
+// console.log(progSum(600))
+
+//6
+function calcTime(time1){
+    mm = Math.floor(time1 / 60)
+    ss = time1 % 60
+    if (mm > 9 && ss > 9){
+        newTime = (`${mm}:${ss}`)
+        console.log(newTime)
+        return
     }
-    return sum1
+    else if (mm < 9 && ss > 9){
+        newTime = (`0${mm}:${ss}`)
+        console.log(newTime)
+        return
+    }
+    else {
+        newTime = (`0${mm}:0${ss}`)
+        console.log(newTime)
+        return
+    }
 }
-console.log(progSum(600))
+calcTime(3100)
 
 
