@@ -422,3 +422,9 @@
 // }
 // console.log(revString([0,1,2]))
 
+//#10
+function removeApple(arr1){
+    return arr1.filter(elem => elem !== 'Apple')
+}
+console.log(removeApple(['Orange', 'Apple', 'Banana']))
+
