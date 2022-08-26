@@ -373,25 +373,46 @@
 // console.log(progSum(600))
 
 //6
-function calcTime(time1){
-    mm = Math.floor(time1 / 60)
-    ss = time1 % 60
-    if (mm > 9 && ss > 9){
-        newTime = (`${mm}:${ss}`)
-        console.log(newTime)
-        return
+// function calcTime(time1){
+//     mm = Math.floor(time1 / 60)
+//     ss = time1 % 60
+//     if (mm > 9 && ss > 9){
+//         newTime = (`${mm}:${ss}`)
+//         console.log(newTime)
+//         return
+//     }
+//     else if (mm < 9 && ss > 9){
+//         newTime = (`0${mm}:${ss}`)
+//         console.log(newTime)
+//         return
+//     }
+//     else {
+//         newTime = (`0${mm}:0${ss}`)
+//         console.log(newTime)
+//         return
+//     }
+// }
+// calcTime(3100)
+
+//#7
+// function getMax(arr1){
+//     max1 = arr1[0]
+//     for (let i = 1; i < arr1.length; i++){
+//         if (arr1[i] > max1){
+//             max1 = arr1[i]
+//         }
+
+//     }
+//     return max1
+// }
+// console.log(getMax([-500,-100,-1]))
+
+//#8
+let arr2 = []
+function revString(arr1){ 
+    for (let i = 0; i < arr1.length; i++){
+        arr2[i] = arr1[arr1.length - i - 1]
     }
-    else if (mm < 9 && ss > 9){
-        newTime = (`0${mm}:${ss}`)
-        console.log(newTime)
-        return
-    }
-    else {
-        newTime = (`0${mm}:0${ss}`)
-        console.log(newTime)
-        return
-    }
+    return arr2;
 }
-calcTime(3100)
-
-
+console.log(revString('Hello'))
