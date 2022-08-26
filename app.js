@@ -407,12 +407,18 @@
 // }
 // console.log(getMax([-500,-100,-1]))
 
-//#8
-let arr2 = []
-function revString(arr1){ 
-    for (let i = 0; i < arr1.length; i++){
-        arr2[i] = arr1[arr1.length - i - 1]
-    }
-    return arr2;
-}
-console.log(revString('Hello'))
+//#9
+// let arr2 = []
+// function revString(arr1){ 
+//     for (let i = 0; i < arr1.length; i++){
+//         arr2[i] = arr1[arr1.length - i - 1]
+//     }
+//     return arr2;
+// }
+//console.log(revString('Hello'))
+
+// function revString(arr1){ 
+//     return arr1.map(elem => 0)
+// }
+// console.log(revString([0,1,2]))
+
