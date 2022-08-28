@@ -445,21 +445,22 @@
 // console.log(ratings(3))
 
 //#2
-let sorted = []
+sorted = []
 x = 0
 function sortLowHigh(arr1){
-    for (let i = 0; i < arr1.length; i++){
+    sorted[0] = arr1[0]
+    arr1Length = arr1.length
+    for (let i = 1; i < arr1Length; i++){
         x = x + 1
-        sorted[0] = arr1[0]
         if (arr1[x] > sorted[x - 1]){
-            sorted[x] = arr1[x]
+            sorted[x] = arr1[x];
         }
         else {
-            let holder = sorted[x - 1]  
-            sorted[x - 1] == arr1[x]
-            sorted[x] == holder 
+            sorted[x] = sorted[x - 1];
+            sorted[x - 1] = arr1[x];
+            x = x - 1
         }
     }
     return sorted
 }
-console.log(sortLowHigh([10, 5, 20]))
+console.log(sortLowHigh([10, 20, 7, 5]))
