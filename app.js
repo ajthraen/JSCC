@@ -423,8 +423,23 @@
 // console.log(revString([0,1,2]))
 
 //#10
-function removeApple(arr1){
-    return arr1.filter(elem => elem !== 'Apple')
-}
-console.log(removeApple(['Orange', 'Apple', 'Banana']))
+// function removeApple(arr1){
+//     return arr1.filter(elem => elem !== 'Apple')
+// }
+// console.log(removeApple(['Orange', 'Apple', 'Banana']))
 
+//ADVANCED
+//#1
+let stars = []
+let x = 0
+function ratings(num1) {
+    for (let i = 0; i < num1; i++){
+        stars.push('*')
+        x = x + 1
+    }
+    if (num1 % 1 == 0.5){
+        stars[x - 1] = ('.')
+    }
+    return stars
+}
+console.log(ratings(5))
