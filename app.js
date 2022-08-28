@@ -430,16 +430,36 @@
 
 //ADVANCED
 //#1
-let stars = []
-let x = 0
-function ratings(num1) {
-    for (let i = 0; i < num1; i++){
-        stars.push('*')
+// let stars = '';
+// let x = 0
+// function ratings(num1) {
+//     for (let i = 0.5; i < num1; i++){
+//         stars = stars + "* "
+//         x = x + 1
+//     }
+//     if (num1 % 1 == 0.5){
+//         stars = stars + "."
+//     }
+//     return stars
+// }
+// console.log(ratings(3))
+
+//#2
+let sorted = []
+x = 0
+function sortLowHigh(arr1){
+    for (let i = 0; i < arr1.length; i++){
         x = x + 1
+        sorted[0] = arr1[0]
+        if (arr1[x] > sorted[x - 1]){
+            sorted[x] = arr1[x]
+        }
+        else {
+            let holder = sorted[x - 1]  
+            sorted[x - 1] == arr1[x]
+            sorted[x] == holder 
+        }
     }
-    if (num1 % 1 == 0.5){
-        stars[x - 1] = ('.')
-    }
-    return stars
+    return sorted
 }
-console.log(ratings(5))
+console.log(sortLowHigh([10, 5, 20]))
