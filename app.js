@@ -445,22 +445,47 @@
 // console.log(ratings(3))
 
 //#2
-sorted = []
-x = 0
-function sortLowHigh(arr1){
-    sorted[0] = arr1[0]
-    arr1Length = arr1.length
-    for (let i = 1; i < arr1Length; i++){
-        x = x + 1
-        if (arr1[x] > sorted[x - 1]){
-            sorted[x] = arr1[x];
-        }
-        else {
-            sorted[x] = sorted[x - 1];
-            sorted[x - 1] = arr1[x];
-            x = x - 1
-        }
-    }
-    return sorted
+// let arr2 = []
+// let sorted = []
+// let x = 0
+// function sortLowHigh(arr1){
+//         arr2 = arr1
+//         arr1L = arr1.length
+//     for (let j = 1; j < arr1L; j++){
+//         min1 = 10000000
+//         for (let i = 0; i < arr1L; i++){
+//             if (arr2[i] < min1){
+//                 min1 = arr2[i]
+//                 x = i
+//             }
+//         }
+//         sorted.push(min1)
+//         arr2.splice(x, 1)
+//         x = 0
+//     }
+//     sorted.push(arr2[0])
+//     return sorted
+// }
+// console.log(sortLowHigh([1, 2, 7, 71, 2, 20]))
+
+//Easy Way
+// function sortLowHigh(numbers) {
+//     return numbers.sort((a, b) => a - b);
+// }
+// console.log(sortLowHigh([1, 200, 7, 71, 2, 20]))
+
+//#3
+function sortLowHigh(numbers){
+    return numbers.sort((a, b) => {
+        //console.log(b.price, a.price)
+        return (b.price - a.price);
+    })
 }
-console.log(sortLowHigh([10, 20, 7, 5]))
+
+console.log(
+    sortLowHigh([
+        { id: 1, price: 50 },
+        { id: 2, price: 0 },
+        { id: 3, price: 500 }
+    ])
+);
