@@ -475,17 +475,25 @@
 // console.log(sortLowHigh([1, 200, 7, 71, 2, 20]))
 
 //#3
-function sortLowHigh(numbers){
-    return numbers.sort((a, b) => {
-        //console.log(b.price, a.price)
-        return (b.price - a.price);
-    })
-}
+// function sortLowHigh(numbers){
+//     return numbers.sort((a, b) => {
+//         //console.log(b.price, a.price)
+//         return (b.price - a.price);
+//     })
+// }
 
-console.log(
-    sortLowHigh([
-        { id: 1, price: 50 },
-        { id: 2, price: 0 },
-        { id: 3, price: 500 }
-    ])
-);
+// console.log(
+//     sortLowHigh([
+//         { id: 1, price: 50 },
+//         { id: 2, price: 0 },
+//         { id: 3, price: 500 }
+//     ])
+// );
+function myFunction() {
+    var element = document.getElementById("myDIV");
+    element.classList.toggle("active");
+}
+function myFunction2() {
+    var element = document.getElementById("myDIV2");
+    element.classList.toggle("active");
+}

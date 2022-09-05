@@ -57,3 +57,34 @@
     background-color: rgb(218, 206, 189);
     border: 3px solid black;
 } */
+.container1{
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.FAQ {
+    width: 100%;
+}
+#myDIV.active {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}
+#myDIV {
+    color:rgba(0, 255, 255, 0)
+}
+#myDIV2.active {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}
+#myDIV2 {
+    color:rgba(0, 255, 255, 0)
+}
