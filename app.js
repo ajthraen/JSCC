@@ -507,10 +507,31 @@ function myFunction2() {
     element.classList.toggle("active");
 }
 function newUserSubmit(){
-    var userName1 = document.getElementById('userName1').value;
-    var userEmail1 = document.getElementById('userEmail1').value;
-    var userPassword1 = document.getElementById('userPassword1').value; 
-    userInfo.push([userName1, userEmail1, userPassword1]);//This line needs to be fixed
-    console.log(userName1, userEmail1, userPassword1);
+    var x1 = document.getElementById('userName1').value;
+    var x2 = document.getElementById('userEmail1').value;
+    var x3 = document.getElementById('userPassword1').value; 
+
+    // for (i = 0; i <= userInfo.length; i++){
+    //     if (userInfo[i].userEmail1 == x2) {
+    //         console.log('You already have an account')
+    //         return
+    //     }
+    //     else {
+    //         userInfo.push(
+    //             {
+    //                 userName1: x1, 
+    //                 userEmail1: x2, 
+    //                 userPassword1: x3,
+    //             });
+    //             console.log(userInfo);
+    //             return
+    //     }
+    // }
+    userInfo.push(
+        {
+            userName1: x1, 
+            userEmail1: x2, 
+            userPassword1: x3,
+        });
     console.log(userInfo);
 }
