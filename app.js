@@ -489,6 +489,15 @@
 //         { id: 3, price: 500 }
 //     ])
 // );
+let userInfo = [
+    {
+    userName1: 'Andy',
+    userEmail1: 'ajtrain@gmail.com',
+    userPassword1: 'test123',
+    // subStatus: 'VIP',
+    // lessonsComp: [0, 1],
+},
+];
 function myFunction() {
     var element = document.getElementById("myDIV");
     element.classList.toggle("active");
@@ -496,4 +505,13 @@ function myFunction() {
 function myFunction2() {
     var element = document.getElementById("myDIV2");
     element.classList.toggle("active");
+}
+function newUserSubmit(){
+    var userName1 = document.getElementById('userName1').value;
+    var userEmail1 = document.getElementById('userEmail1').value;
+    var userPassword1 = document.getElementById('userPassword1').value;
+    // userInfo.push(userName1, userEmail1, userPassword1);
+    console.log(userName1, userEmail1, userPassword1);
+    console.log(userInfo);
+
 }
