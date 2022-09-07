@@ -509,9 +509,8 @@ function myFunction2() {
 function newUserSubmit(){
     var userName1 = document.getElementById('userName1').value;
     var userEmail1 = document.getElementById('userEmail1').value;
-    var userPassword1 = document.getElementById('userPassword1').value;
-    // userInfo.push(userName1, userEmail1, userPassword1);
+    var userPassword1 = document.getElementById('userPassword1').value; 
+    userInfo.push([userName1, userEmail1, userPassword1]);//This line needs to be fixed
     console.log(userName1, userEmail1, userPassword1);
     console.log(userInfo);
-
 }
